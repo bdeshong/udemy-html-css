@@ -1,6 +1,7 @@
 @font-face {
     font-family: "AnonymousPro";
     src: url('AnonymousPro-Regular.ttf') format("truetype");
+    font-display: block;
 }
 
 @font-face {
@@ -65,11 +66,9 @@ main {
 .package__info {
     padding: 16px;
     border: 1px solid #0e4f1f;
-    font-size: 1.2rem;
     color: #0e4f1f;
     background: white;
-    font-family: "AnonymousPro", sans-serif;
-    font-weight: 700;
+    font-size: 1.2rem;
 }
 
 .clearfix {
