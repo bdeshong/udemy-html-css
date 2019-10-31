@@ -40,18 +40,33 @@
     color: #2ddf5c;
     text-align: center;
   }  
+
+  .plan__list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
   
   .plan {
     background: #d5ffdc;
     text-align: center;
     padding: 1rem;
-    margin: 0.5rem 0;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 28rem;
+    margin: 2rem 0.25rem;
   }
   
   .plan--highlighted {
     background: #19b84c;
     color: white;
+    height: 30rem;
+    z-index: 50;
   }
   
   .plan__annotation {
@@ -90,8 +105,7 @@
 
   @media (min-width: 40rem) {
     .plan__list {
-      width: 100%;
-      text-align: center;
+      flex-direction: row;
     } 
 
     .plan {
@@ -100,6 +114,7 @@
       vertical-align: middle;
       min-width: 13rem;
       max-width: 25rem;
+      margin: 0 0.25rem;
     }
     
     .plan--highlighted {
@@ -123,13 +138,20 @@
     margin: 0;
     padding: 0;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
  
   @media (min-width: 40rem) {
     .key-feature {
-      display: inline-block;
       width: 30%;
       max-width: 25rem;
+    }
+
+    .key-feature__list {
+      flex-direction: row;
+      justify-content: center;
     }
   }
 
