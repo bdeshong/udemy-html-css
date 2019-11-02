@@ -175,16 +175,17 @@
   }
   
   .mobile-nav {
-    display: none;
     position: fixed;
     z-index: 101;
     top: 0;
     left: 0;
+    transform: translateX(-100%);
+    transition: transform 300ms ease-out;
     background: white;
     width: 80%;
     height: 100vh;
   }
-  
+
   .mobile-nav__items {
     width: 90%;
     height: 100%;
